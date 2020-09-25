@@ -1,13 +1,11 @@
-{application, dg,
+{application, dg_jh,
  [{description, "An OTP application"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {dg_app, []}},
+  {mod, {dg_jh_app, []}},
   {applications,
    [kernel,
-    stdlib,
-    % my apps
-    dg_jh
+    stdlib
    ]},
   {env,[]},
   {modules, []},
