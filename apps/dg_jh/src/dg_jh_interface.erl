@@ -17,11 +17,9 @@
 
 -type reason() :: string().
 
--type callable() :: fun((M :: atom(), F :: atom(), A :: [any()]) -> result()).
+-type jh_request() :: {name(), function()}.
 
--type jh_request() :: {name(), callable()}.
-
--type jh_indication() :: {name(), {ok, result()} | {error, reason()}}.
+-type jh_indication() :: {name(), {ok, result()}} | {name(), {error, reason()}}.
 
 %% Callbacks
 
